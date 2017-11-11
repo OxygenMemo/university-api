@@ -1,0 +1,9 @@
+npm install --save express
+npm install --save body-parser // use /student/:id call with res.params.id
+
+const express = require('express')// ได้ function มา 
+const bodyParser = require('body-parser')
+const app = express() // ถ้าจะให้ function ที่เอามา ต้องใส่ วงเล็บตามหลัง()
+
+app.use(bodyParser.urlencoded({ extended : false }))
+app.use(bodyParser.json())
