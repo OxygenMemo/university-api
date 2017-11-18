@@ -4,7 +4,7 @@ const app = express() // ถ้าจะให้ function ที่เอาม
 
 app.use(bodyParser.urlencoded({ extended : false }))
 app.use(bodyParser.json())
-let students = [
+let students = [ //จำลอง Database ว่ามันเป็น
     {id : 1 , name : "gun" , email : "gun@hotmail.com"},
     {id : 2 , name : "kuy" , email : "kuy@hotmail.com"}
 ]
